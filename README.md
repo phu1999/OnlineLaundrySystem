@@ -1,5 +1,4 @@
 # OnlineLaundrySystem
-FPT-APTECH Projects
 Technology:
 - ASP.Net MVC 5.
 - .Net Framework 4.7.2.
