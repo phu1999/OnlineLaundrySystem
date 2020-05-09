@@ -22,7 +22,7 @@ namespace OnlineLaundrySystem
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            
+
             // Bundle for home template
             bundles.Add(new ScriptBundle("~/Content/template/js").Include(
                     "~/Content/template/js/all.min.js",
@@ -40,7 +40,6 @@ namespace OnlineLaundrySystem
                     "~/Content/template/js/fontawesome.min.js",
                     "~/Content/template/js/popper.js"
                     ));
-
             bundles.Add(new StyleBundle("~/Content/template/css").Include(
                     "~/Content/template/css/bootstrap.css",
                     "~/Content/template/css/swipebox.css",
@@ -52,7 +51,14 @@ namespace OnlineLaundrySystem
                     "~/Content/template/css/all.min.css"
                     ));
             // Bundle for admin template
-            
+            bundles.Add(new ScriptBundle("~/Content/admin-template/js").Include(
+                    "~/Content/admin-template/js/scripts.js",
+                    "~/Content/admin-template/js/fontawesome.min.js"
+                    ));
+            bundles.Add(new StyleBundle("~/Content/admin-template/css").Include(
+                    "~/Content/admin-template/css/fontawesome.min.css",
+                    "~/Content/admin-template/css/styles.css"
+                    ));
         }
     }
 }
