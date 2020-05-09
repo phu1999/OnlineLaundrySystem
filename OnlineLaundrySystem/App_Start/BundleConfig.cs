@@ -22,35 +22,34 @@ namespace OnlineLaundrySystem
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
-            #region Template Desing
-
-            bundles.Add(new ScriptBundle("~/template/js").Include(
-                    "~/Scripts/jquery-2.2.3.min.js",
-                    "~/Scripts/responsiveslides.min.js",
-                    "~/Scripts/move-top.js",
-                    "~/Scripts/easing.js",
-                    "~/Scripts/SmoothScroll.min.js",
-                    "~/Scripts/jquery.swipebox.min.js",
-                    "~/Scripts/jquery.adipoli.min.js",
-                    "~/Scripts/counter.js",
-                    "~/Scripts/jquery-ui.js",
-                    "~/Scripts/owl.carousel.js",
-                    "~/Scripts/bootstrap.js"
+            
+            // Bundle for home template
+            bundles.Add(new ScriptBundle("~/Content/template/js").Include(
+                    "~/Content/template/js/jquery-2.2.3.min.js",
+                    "~/Content/template/js/responsiveslides.min.js",
+                    "~/Content/template/js/move-top.js",
+                    "~/Content/template/js/easing.js",
+                    "~/Content/template/js/SmoothScroll.min.js",
+                    "~/Content/template/js/jquery.swipebox.min.js",
+                    "~/Content/template/js/jquery.adipoli.min.js",
+                    "~/Content/template/js/counter.js",
+                    "~/Content/template/js/jquery-ui.js",
+                    "~/Content/template/js/owl.carousel.js",
+                    "~/Content/template/js/bootstrap.js",
+                    "~/Content/template/js/fontawesome.min.js"
                     ));
 
-            bundles.Add(new StyleBundle("~/template/css").Include(
-                    "~/Content/css/bootstrap.css",
-                    "~/Content/css/swipebox.css",
-                    "~/Content/css/style.css",
-                    "~/Content/css/fontawesome-all.min.css",
-                    "~/Content/css/jquery-ui.css",
-                    "~/Content/css/owl.carousel.css"
+            bundles.Add(new StyleBundle("~/Content/template/css").Include(
+                    "~/Content/template/css/bootstrap.css",
+                    "~/Content/template/css/swipebox.css",
+                    "~/Content/template/css/style.css",
+                    "~/Content/template/css/fontawesome-all.min.css",
+                    "~/Content/template/css/jquery-ui.css",
+                    "~/Content/template/css/owl.carousel.css",
+                    "~/Content/template/css/counter.css"
                     ));
-
-            #endregion
+            // Bundle for admin template
+            
         }
     }
 }

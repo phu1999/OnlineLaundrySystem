@@ -1,175 +1,165 @@
-﻿
-<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+}
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title></title>
-</head>
-<body>
-    <div>
-
-        <!-- banner -->
-        <div class="banner" id="home">
-            <div class="container">
-                <div class="banner-text text-center">
-                    <div class="callbacks_container">
-                        <ul class="rslides" id="slider3">
-                            <li>
-                                <div class="slider-info">
-                                    <h3 class="text-capitalize">We care for all your valued garments </h3>
-                                    @*<a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">read more</a>*@
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider-info">
-                                    <h3 class="text-capitalize">Trust Us, We Save Your Time.</h3>
-                                    @*<a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">read more</a>*@
-                                </div>
-                            </li>
-                            <li>
-                                <div class="slider-info">
-                                    <h3 class="text-capitalize">we offer the best laundry services</h3>
-                                    @*<a class="btn btn-primary  mt-4 text-capitalize scroll" href="#about" role="button">read more</a>*@
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+<div>
+    <!-- banner -->
+    <div class="banner" id="home">
+        <div class="container">
+            <div class="banner-text text-center">
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider3">
+                        <li>
+                            <div class="slider-info">
+                                <h3 class="text-capitalize">We care for all your valued garments </h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider-info">
+                                <h3 class="text-capitalize">Trust Us, We Save Your Time.</h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slider-info">
+                                <h3 class="text-capitalize">we offer the best laundry services</h3>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <!-- //banner -->
-        <!-- team -->
-        <section class="wthree-row py-5" id="team">
-            <div class="container py-md-5 py-3">
-                <div class="py-md-5 py-3 bg-pricemain text-center">
-                    <h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">meet our team</h3>
-                </div>
-                <div class="row">
-                    <div class="col-md-2 team-grids col-md-offset-1">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Mr.Tran Phuoc Sinh</h4>
-                            <p>CEO</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-                    <div class="col-md-2 team-grids mt-sm-0 mt-5">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Le Thanh Nghia</h4>
-                            <p>Chairman</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-                    <div class="col-md-2 team-grids mt-lg-0 mt-5">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Tran Anh Tu</h4>
-                            <p>Staff</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-                    <div class="col-md-2 team-grids mt-lg-0 mt-5">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Truong Hong Luan</h4>
-                            <p>Staff</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-                    <div class="col-md-2 team-grids mt-lg-0 mt-5">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Le Minh Huan</h4>
-                            <p>Staff</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-                    <div class="col-md-2 team-grids mt-lg-0 mt-5">
-                        <div class="team-effect">
-                            <img src="~/Content/images/t3.jpg" alt="img" class="img-responsive">
-                        </div>
-                        <!-- team text -->
-                        <div class="footerv2-w3ls mt-3">
-                            <h4>Tran Minh Phu</h4>
-                            <p>Staff</p>
-                        </div>
-                        <!-- //team text -->
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- //team -->
-        <!-- gallery -->
-        <div class="gallery  py-md-5 py-3" id="gallery">
-            <div class="container">
-                <h3 class="w3ls-title text-center text-capitalize py-md-4 py-3">Gallery</h3>
-                <div class="gallery_gds row">
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g4.jpg" class="swipebox" title="We schedule pickup and drop as per your convenience.">
-                                <img src="~/Content/images/g4.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g5.jpg" class="swipebox" title="">
-                                <img src="~/Content/images/g5.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g6.jpg" class="swipebox" title="">
-                                <img src="~/Content/images/g6.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pb-md-5 pb-3">
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g7.jpg" class="swipebox" title="">
-                                <img src="~/Content/images/g7.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g8.jpg" class="swipebox" title="">
-                                <img src="~/Content/images/g8.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4  gal-w3l">
-                        <div class="agileits-img">
-                            <a href="~/Content/images/g9.jpg" class="swipebox" title="">
-                                <img src="~/Content/images/stat.jpg" alt="" class="img-responsive img-style row2" />
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- //gallery -->
     </div>
-</body>
-</html>
+    <!-- //banner -->
+    <!-- team -->
+    <section class="wthree-row py-5" id="team">
+        <div class="container py-md-5 py-3">
+            <div class="py-md-5 py-3 bg-pricemain text-center">
+                <h3 class="w3ls-title text-center text-capitalize pb-md-5 pb-4">meet our team</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-2 team-grids col-md-offset-1">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Mr.Tran Phuoc Sinh</h4>
+                        <p>CEO</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+                <div class="col-md-2 team-grids mt-sm-0 mt-5">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Le Thanh Nghia</h4>
+                        <p>Chairman</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+                <div class="col-md-2 team-grids mt-lg-0 mt-5">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Tran Anh Tu</h4>
+                        <p>Staff</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+                <div class="col-md-2 team-grids mt-lg-0 mt-5">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Truong Hong Luan</h4>
+                        <p>Staff</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+                <div class="col-md-2 team-grids mt-lg-0 mt-5">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Le Minh Huan</h4>
+                        <p>Staff</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+                <div class="col-md-2 team-grids mt-lg-0 mt-5">
+                    <div class="team-effect">
+                        <img src="~/Content/template/images/t3.jpg" alt="img" class="img-responsive">
+                    </div>
+                    <!-- team text -->
+                    <div class="footerv2-w3ls mt-3">
+                        <h4>Tran Minh Phu</h4>
+                        <p>Staff</p>
+                    </div>
+                    <!-- //team text -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- //team -->
+    <!-- gallery -->
+    <div class="gallery  py-md-5 py-3" id="gallery">
+        <div class="container">
+            <h3 class="w3ls-title text-center text-capitalize py-md-4 py-3">Gallery</h3>
+            <div class="gallery_gds row">
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g4.jpg" class="swipebox" title="We schedule pickup and drop as per your convenience.">
+                            <img src="~/Content/template/images/g4.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g5.jpg" class="swipebox" title="">
+                            <img src="~/Content/template/images/g5.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g6.jpg" class="swipebox" title="">
+                            <img src="~/Content/template/images/g6.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-md-5 pb-3">
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g7.jpg" class="swipebox" title="">
+                            <img src="~/Content/template/images/g7.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g8.jpg" class="swipebox" title="">
+                            <img src="~/Content/template/images/g8.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4  gal-w3l">
+                    <div class="agileits-img">
+                        <a href="~/Content/template/images/g9.jpg" class="swipebox" title="">
+                            <img src="~/Content/template/images/stat.jpg" alt="" class="img-responsive img-style row2" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //gallery -->
+</div>
