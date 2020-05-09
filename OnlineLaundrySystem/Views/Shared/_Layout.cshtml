@@ -30,7 +30,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="@Url.Action("Index","Home")">
                     @*<i class="fab fa-empire"></i>*@
-                    <img src="~/Content/images/logo2.png" alt="logo" title="logo" />
+                    <img src="~/Content/images/logo.png" alt="logo" title="logo" />
                 </a>
                 <button class="navbar-toggler ml-md-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -75,121 +75,20 @@
     @RenderBody()
 
     <!-- footer -->
-    <footer class="py-md-5 pt-5 pb-4">
-        <div class="container">
-            <!-- footer grid top -->
-            <div class="footerv2-w3ls text-center">
-                <h4 class="w3ls-title text-capitalize pb-3">socialize with us</h4>
-                <ul class="social-iconsv2 agileinfo mt-3">
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-google-plus-g"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </li>
-                </ul>
-                <div class="fv3-contact mt-3">
-                    <span class="fas fa-envelope-open mr-2"></span>
-                    <p>
-                        <a href="mailto:example@email.com" class="text-dark">info@example.com</a>
-                    </p>
-                </div>
-                <div class="fv3-contact">
-                    <span class="fas fa-phone-volume mr-2"></span>
-                    <p>+456 123 7890</p>
-                </div>
-            </div>
-            <!-- copyright -->
-            <div class="cpy-right text-center pt-5">
-                <p>
-                    © 2020. All rights reserved.
-                </p>
-            </div>
-            <!-- //copyright -->
+<footer class="py-md-5 pt-5 pb-4">
+    <div class="container">
+        <!-- copyright -->
+        <div class="cpy-right text-center pt-5">
+            <p>
+                © 2020. All rights reserved.
+            </p>
         </div>
-    </footer>
-    <!-- //footer -->
-    <!-- order modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-capitalize" id="exampleModalLabel1">order your laundry</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form action="#" method="post" class="p-3">
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Your Name</label>
-                            <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-name" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name1" class="col-form-label">Your Email</label>
-                            <input type="email" class="form-control" placeholder=" " name="Name" id="recipient-name1" required="">
-                        </div>
-                        <div class="form-group">
-                            <label for="recipient-name2" class="col-form-label">Phone</label>
-                            <input type="text" class="form-control" placeholder=" " name="Name" id="recipient-name2" required="">
-                        </div>
-                        <div class="form-group">
-                            <label class="mr-2 col-form-label">Pick Up</label>
-                            <input id="datepicker1" name="check in" type="text" value="mm/dd/yyyy" class="form-control" required="">
-                        </div>
-                        <div class="form-group">
-                            <label class="mr-2 col-form-label">Delivery </label>
-                            <input id="datepicker2" name="check out" type="text" value="mm/dd/yyyy" class="form-control" required="">
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-form-label" for="l1">
-                                <input type="checkbox" class="form-check-input" value="" id="l1">Wash& Fold
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-form-label" for="l2">
-                                <input type="checkbox" class="form-check-input" value="" id="l2">Handwash
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-form-label" id="l3">
-                                <input type="checkbox" class="form-check-input" value="" id="13">Dry Clean
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label col-form-label" for="l4">
-                                <input type="checkbox" class="form-check-input" value="" id="l4">Carpets
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label for="comment" class="col-form-label">Pickup Address:</label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                        </div>
-
-                        <div class="right-w3l">
-                            <input type="submit" class="form-control" value="pick my laundry">
-                        </div>
-                    </form>
-
-                </div>
-            </div>
-        </div>
+        <!-- //copyright -->
     </div>
-    <!-- //order modal -->
+</footer>
+
+    <!-- //footer -->
+
     @Scripts.Render("~/template/js")
     <!-- Banner text Responsiveslides -->
     <script>
@@ -229,14 +128,14 @@
     <!-- smooth-scrolling-of-move-up -->
     <script>
         $(document).ready(function () {
-            /*
+            
              var defaults = {
                  containerID: 'toTop', // fading element id
                  containerHoverID: 'toTopHover', // fading element hover id
                  scrollSpeed: 1200,
                  easingType: 'linear'
              };
-             */
+             
 
             $().UItoTop({
                 easingType: 'easeOutQuart'
