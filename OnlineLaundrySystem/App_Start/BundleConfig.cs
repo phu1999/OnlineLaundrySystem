@@ -25,6 +25,7 @@ namespace OnlineLaundrySystem
             
             // Bundle for home template
             bundles.Add(new ScriptBundle("~/Content/template/js").Include(
+                    "~/Content/template/js/all.min.js",
                     "~/Content/template/js/jquery-2.2.3.min.js",
                     "~/Content/template/js/responsiveslides.min.js",
                     "~/Content/template/js/move-top.js",
@@ -36,17 +37,19 @@ namespace OnlineLaundrySystem
                     "~/Content/template/js/jquery-ui.js",
                     "~/Content/template/js/owl.carousel.js",
                     "~/Content/template/js/bootstrap.js",
-                    "~/Content/template/js/fontawesome.min.js"
+                    "~/Content/template/js/fontawesome.min.js",
+                    "~/Content/template/js/popper.js"
                     ));
 
             bundles.Add(new StyleBundle("~/Content/template/css").Include(
                     "~/Content/template/css/bootstrap.css",
                     "~/Content/template/css/swipebox.css",
                     "~/Content/template/css/style.css",
-                    "~/Content/template/css/fontawesome-all.min.css",
+                    "~/Content/template/css/fontawesome.min.css",
                     "~/Content/template/css/jquery-ui.css",
                     "~/Content/template/css/owl.carousel.css",
-                    "~/Content/template/css/counter.css"
+                    "~/Content/template/css/counter.css",
+                    "~/Content/template/css/all.min.css"
                     ));
             // Bundle for admin template
             

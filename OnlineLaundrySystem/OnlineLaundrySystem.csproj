@@ -164,9 +164,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
+    <Content Include="Content\template\css\all.min.css" />
     <Content Include="Content\template\css\bootstrap.css" />
     <Content Include="Content\template\css\counter.css" />
-    <Content Include="Content\template\css\fontawesome-all.min.css" />
+    <Content Include="Content\template\css\fontawesome.min.css" />
     <Content Include="Content\template\css\jquery-ui.css" />
     <Content Include="Content\template\css\owl.carousel.css" />
     <Content Include="Content\template\css\style.css" />
@@ -197,6 +198,7 @@
     <Content Include="Content\template\images\testi.jpg" />
     <Content Include="Content\template\images\w.jpg" />
     <Content Include="Content\template\images\w1.jpg" />
+    <Content Include="Content\template\js\all.min.js" />
     <Content Include="Content\template\js\bootstrap.js" />
     <Content Include="Content\template\js\counter.js" />
     <Content Include="Content\template\js\easing.js" />
@@ -207,6 +209,7 @@
     <Content Include="Content\template\js\jquery.swipebox.min.js" />
     <Content Include="Content\template\js\move-top.js" />
     <Content Include="Content\template\js\owl.carousel.js" />
+    <Content Include="Content\template\js\popper.js" />
     <Content Include="Content\template\js\responsiveslides.min.js" />
     <Content Include="Content\template\js\SmoothScroll.min.js" />
     <Content Include="favicon.ico" />

@@ -10,20 +10,68 @@
                 <ol class="breadcrumb">
                     <li><a href="">Home</a></li>
                     /
-                    <li class="active">About Us</li>
+                    <li class="active">Register</li>
                 </ol>
             </div>
         </div>
     </div>
 </div>
+@*name, phone, address, email,password*@
 <div class="container">
-    <div class="col-md-12">
-        <h2>ABOUT MYLAUNDRY</h2>
-        <br />
-        <p>
-            <strong>MyLaundry is an On-Demand Laundry and Dry-Cleaning service company, presently operating in Vietnam.</strong>
-            We provide an affordable and convenient way of getting your laundry done right at your finger-tips.
-            We offer the best online laundry service and help you get rid of those extra pile of dirty clothes and deliver you fresh clothes.
-        </p>
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="card-header">
+                <h3>Register Page</h3>
+            </div>
+            <div class="card-body">
+                @*begin here*@
+                <form>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="username">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-phone"></i></span>
+                        </div>
+                        <select class="custom-select" style="max-width: 120px;">
+                            <option selected="">+91</option>
+                            <option value="1">+84</option>
+                        </select>
+                        <input type="tel" class="form-control" placeholder="Phone number">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-home"></i></span>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <input type="email" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control" placeholder="password">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block float-right" value="Register">Create Account</button>
+                    </div>
+
+
+                </form>
+            </div>
+            <div class="card-footer">
+                
+                <p class="text-center">Have an account? <a href="">Login here</a> </p>
+            </div>
+        </div>
     </div>
 </div>
+
