@@ -37,6 +37,7 @@ namespace OnlineLaundrySystem
                     "~/Content/template/js/jquery-ui.js",
                     "~/Content/template/js/owl.carousel.js",
                     "~/Content/template/js/bootstrap.js",
+                    "~/Content/template/js/bootstrap.min.js",
                     "~/Content/template/js/fontawesome.min.js",
                     "~/Content/template/js/popper.js"
                     ));

@@ -3,6 +3,10 @@
     Layout = "~/Views/Shared/_HomeLayout.cshtml";
 }
 
+<script src="~/Content/template/js/jquery-3.3.1.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+<link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css"
+
 <div class="bread-bar">
     <div class="container">
         <div class="row">
@@ -10,21 +14,62 @@
                 <ol class="breadcrumb">
                     <li><a href="">Home</a></li>
                     /
-                    <li class="active">About Us</li>
+                    <li class="active">Order Online</li>
                 </ol>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
-    <div class="col-md-12">
-        <h2>ABOUT MYLAUNDRY</h2>
-        <br />
-        <p>
-            <strong>MyLaundry is an On-Demand Laundry and Dry-Cleaning service company, presently operating in Vietnam.</strong>
-            We provide an affordable and convenient way of getting your laundry done right at your finger-tips.
-            We offer the best online laundry service and help you get rid of those extra pile of dirty clothes and deliver you fresh clothes.
-        </p>
+    <div class="col-md-12 text-center">
+        <h1>Schedule Pickup</h1>
+        <h5>
+            Schedule your wash now by providing the details in below form and leave the rest to
+            us!
+        </h5>
     </div>
+    <br />
+    @*Select pickup Date, Options, Item name*@
+<div class="row-cols-md-6">
+    <div class="form-group">
+        <label>Select pickup date:</label>
+        <input placeholder="Select date" id="datepicker" width="400" />
+        <script>
+            $('#datepicker').datepicker();
+        </script>
+    </div>
+    
+    <div class="form-group">
+        <label>Select options:</label>
+        <select id="dropdown" width="400">
+            <option value="1">Clothes by pieces wise</option>
+            <option value="2">Bunch of cloth weight wise</option>
+            <option value="3">Package for a month wise</option>
+        </select>
+        <script>
+            $('#dropdown').dropdown();
+        </script>
+    </div>
+    <div class="form-group">
+        <label>Select Item Name:</label><br />
+        <input type="checkbox" id="chkb-1" /> &nbsp; &nbsp;<label for="chkb-1">Jeans</label>
+        <input type="checkbox" id="chkb-2" /> &nbsp; &nbsp;<label for="chkb-2">Kurta</label>
+        <input type="checkbox" id="chkb-3" /> &nbsp; &nbsp;<label for="chkb-3">Pant</label>
+        <input type="checkbox" id="chkb-4" /> &nbsp; &nbsp;<label for="chkb-4">Pyjama</label>
+        <input type="checkbox" id="chkb-5" /> &nbsp; &nbsp;<label for="chkb-5">Salwaar</label>
+        <input type="checkbox" id="chkb-6" /> &nbsp; &nbsp;<label for="chkb-6">Shirt</label>
+        <input type="checkbox" id="chkb-7" /> &nbsp; &nbsp;<label for="chkb-7">Short</label>
+        <input type="checkbox" id="chkb-8" /> &nbsp; &nbsp;<label for="chkb-8">T-Shirt</label>
 
+        <script>
+            $('#chkb-unchecked').checkbox();
+            $('#chkb-checked').checkbox().state('checked');
+            $('#chkb-indeterminate').checkbox().state('indeterminate');
+            $('#chkb-disabled').checkbox().state('checked').prop('disabled', true);
+        </script>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+
+</div>
 </div>
