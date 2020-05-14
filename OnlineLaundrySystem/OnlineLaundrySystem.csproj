@@ -131,15 +131,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\admin-template\css\all.min.css" />
-    <Content Include="Content\admin-template\css\bootstrap.min.css" />
-    <Content Include="Content\admin-template\css\fontawesome.min.css" />
-    <Content Include="Content\admin-template\css\jquery-ui.css" />
-    <Content Include="Content\admin-template\js\all.min.js" />
-    <Content Include="Content\admin-template\js\bootstrap.min.js" />
-    <Content Include="Content\admin-template\js\fontawesome.min.js" />
+    <Content Include="Content\admin-template\css\dataTables.bootstrap4.min.css" />
     <Content Include="Content\admin-template\css\styles.css" />
-    <Content Include="Content\admin-template\js\jquery-3.5.1.min.js" />
+    <Content Include="Content\admin-template\js\all.min.js" />
+    <Content Include="Content\admin-template\js\bootstrap.bundle.min.js" />
+    <Content Include="Content\admin-template\js\datatables-demo.js" />
+    <Content Include="Content\admin-template\js\dataTables.bootstrap4.min.js" />
+    <Content Include="Content\admin-template\js\jquery-3.4.1.min.js" />
+    <Content Include="Content\admin-template\js\jquery.dataTables.min.js" />
     <Content Include="Content\admin-template\js\scripts.js" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -154,11 +153,8 @@
     <Content Include="Content\owl.carousel.css" />
     <Content Include="Content\style.css" />
     <Content Include="Content\swipebox.css" />
-    <Content Include="Content\template\css\all.min.css" />
     <Content Include="Content\template\css\bootstrap.css" />
-    <Content Include="Content\template\css\bootstrap.min.css" />
-    <Content Include="Content\template\css\counter.css" />
-    <Content Include="Content\template\css\fontawesome.min.css" />
+    <Content Include="Content\template\css\fontawesome-all.min.css" />
     <Content Include="Content\template\css\jquery-ui.css" />
     <Content Include="Content\template\css\owl.carousel.css" />
     <Content Include="Content\template\css\style.css" />
@@ -197,20 +193,15 @@
     <Content Include="Content\template\images\testi.jpg" />
     <Content Include="Content\template\images\w.jpg" />
     <Content Include="Content\template\images\w1.jpg" />
-    <Content Include="Content\template\js\all.min.js" />
     <Content Include="Content\template\js\bootstrap.js" />
-    <Content Include="Content\template\js\bootstrap.min.js" />
     <Content Include="Content\template\js\counter.js" />
     <Content Include="Content\template\js\easing.js" />
-    <Content Include="Content\template\js\fontawesome.min.js" />
     <Content Include="Content\template\js\jquery-2.2.3.min.js" />
-    <Content Include="Content\template\js\jquery-3.3.1.min.js" />
     <Content Include="Content\template\js\jquery-ui.js" />
     <Content Include="Content\template\js\jquery.adipoli.min.js" />
     <Content Include="Content\template\js\jquery.swipebox.min.js" />
     <Content Include="Content\template\js\move-top.js" />
     <Content Include="Content\template\js\owl.carousel.js" />
-    <Content Include="Content\template\js\popper.js" />
     <Content Include="Content\template\js\responsiveslides.min.js" />
     <Content Include="Content\template\js\SmoothScroll.min.js" />
     <Content Include="favicon.ico" />
@@ -462,11 +453,11 @@
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
   </Target>
-<Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
+  <Target Name="CopyRoslynFiles" AfterTargets="AfterBuild" Condition="!$(Disable_CopyWebApplication) And '$(OutDir)' != '$(OutputPath)'">
     <ItemGroup>
       <RoslynFiles Include="$(CscToolPath)\*" />
     </ItemGroup>
     <MakeDir Directories="$(WebProjectOutputDir)\bin\roslyn" />
     <Copy SourceFiles="@(RoslynFiles)" DestinationFolder="$(WebProjectOutputDir)\bin\roslyn" SkipUnchangedFiles="true" Retries="$(CopyRetryCount)" RetryDelayMilliseconds="$(CopyRetryDelayMilliseconds)" />
-</Target>
+  </Target>
 </Project>

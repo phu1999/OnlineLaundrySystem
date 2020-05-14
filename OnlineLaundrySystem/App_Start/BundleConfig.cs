@@ -25,7 +25,6 @@ namespace OnlineLaundrySystem
 
             // Bundle for home template
             bundles.Add(new ScriptBundle("~/Content/template/js").Include(
-                    "~/Content/template/js/all.min.js",
                     "~/Content/template/js/jquery-2.2.3.min.js",
                     "~/Content/template/js/responsiveslides.min.js",
                     "~/Content/template/js/move-top.js",
@@ -36,30 +35,31 @@ namespace OnlineLaundrySystem
                     "~/Content/template/js/counter.js",
                     "~/Content/template/js/jquery-ui.js",
                     "~/Content/template/js/owl.carousel.js",
-                    "~/Content/template/js/bootstrap.js",
-                    "~/Content/template/js/bootstrap.min.js",
-                    "~/Content/template/js/fontawesome.min.js",
-                    "~/Content/template/js/popper.js"
+                    "~/Content/template/js/bootstrap.js"
                     ));
             bundles.Add(new StyleBundle("~/Content/template/css").Include(
                     "~/Content/template/css/bootstrap.css",
                     "~/Content/template/css/swipebox.css",
                     "~/Content/template/css/style.css",
-                    "~/Content/template/css/fontawesome.min.css",
+                    "~/Content/template/css/fontawesome-all.min.css",
                     "~/Content/template/css/jquery-ui.css",
-                    "~/Content/template/css/owl.carousel.css",
-                    "~/Content/template/css/counter.css",
-                    "~/Content/template/css/all.min.css"
+                    "~/Content/template/css/owl.carousel.css"
                     ));
             // Bundle for admin template
-            bundles.Add(new ScriptBundle("~/Content/admin-template/js").Include(
-                    "~/Content/admin-template/js/scripts.js",
-                    "~/Content/admin-template/js/fontawesome.min.js"
-                    ));
             bundles.Add(new StyleBundle("~/Content/admin-template/css").Include(
-                    "~/Content/admin-template/css/fontawesome.min.css",
+                    "~/Content/admin-template/css/dataTables.bootstrap4.min.css",
                     "~/Content/admin-template/css/styles.css"
                     ));
+            bundles.Add(new ScriptBundle("~/Content/admin-template/js").Include(
+                    "~/Content/admin-template/js/all.min.js",
+                    "~/Content/admin-template/js/bootstrap.bundle.min.js",
+                    "~/Content/admin-template/js/datatables-demo.js",
+                    "~/Content/admin-template/js/dataTables.bootstrap4.min.js",
+                    "~/Content/admin-template/js/jquery-3.4.1.min.js",
+                    "~/Content/admin-template/js/jquery.dataTables.min.js",
+                    "~/Content/admin-template/js/scripts.js"
+                    ));
+            
         }
     }
 }
