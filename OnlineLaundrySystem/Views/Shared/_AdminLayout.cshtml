@@ -21,56 +21,67 @@
             <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
                 <div class="sb-sidenav-menu">
                     <div class="nav">
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Customer0
-
-                             
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseCustomers" aria-expanded="false" aria-controls="collapseCustomers">
+                            <div class="sb-nav-link-icon"><i class="fas fa-user"></i></div>
+                            Customer
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="layout-static.html">Static Navigation</a><a class="nav-link" href="layout-sidenav-light.html">Light Sidenav</a></nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                            Pages
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                    Authentication
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="login.html">Login</a><a class="nav-link" href="register.html">Register</a><a class="nav-link" href="password.html">Forgot Password</a></nav>
-                                </div>
-                                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                    Error
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav"><a class="nav-link" href="401.html">401 Page</a><a class="nav-link" href="404.html">404 Page</a><a class="nav-link" href="500.html">500 Page</a></nav>
-                                </div>
+                        <div class="collapse" id="collapseCustomers" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="">Add new customer</a>
+                                <a class="nav-link" href="">View customer list</a>
+                                <a class="nav-link" href="">Edit customer</a>
+                                <a class="nav-link" href="">Delete customer</a>
+                                <a class="nav-link" href="">Search customer</a>
                             </nav>
                         </div>
-                        <div class="sb-sidenav-menu-heading">Addons</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInvoices" aria-expanded="false" aria-controls="collapseInvoices">
+                            <div class="sb-nav-link-icon"><i class="fas fa-file-invoice"></i></div>
+                            Invoices
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseInvoices" aria-labelledby="headingTwo" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="">Create invoices</a>
+                                <a class="nav-link" href="">View invoices list</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseDelivery" aria-expanded="false" aria-controls="collapseDelivery">
+                            <div class="sb-nav-link-icon"><i class="fas fa-truck"></i></div>
+                            Delivery
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseDelivery" aria-labelledby="headingThree" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="">Ready Status</a>
+                                <a class="nav-link" href="">Pending Status</a>
+                                <a class="nav-link" href="">Delivered Status</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseReports" aria-expanded="false" aria-controls="collapseReports">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts
-                        </a><a class="nav-link" href="tables.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Tables
+                            Reports
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseReports" aria-labelledby="headingFour" data-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="">Customer List</a>
+                                <a class="nav-link" href="">Daily Collection</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="@Url.Action("Login","Admin")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-sign-out-alt"></i></div>
+                            Log Out
                         </a>
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    admin
                 </div>
             </nav>
         </div>
@@ -79,7 +90,7 @@
                 <div class="container-fluid">
                     <h1 class="mt-4">Dashboard</h1>
                     <ol class="breadcrumb mb-4">
-                        <li class="breadcrumb-item"><a href=""></a>Home</li>
+                        <li class="breadcrumb-item"><a href="#"></a>Home</li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                     <div class="card mb-4">
@@ -94,7 +105,6 @@
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
                         <div class="text-muted">Copyright &copy; MyLaundry 2020</div>
-
                     </div>
                 </div>
             </footer>

@@ -133,6 +133,7 @@
   <ItemGroup>
     <Content Include="Content\admin-template\css\dataTables.bootstrap4.min.css" />
     <Content Include="Content\admin-template\css\styles.css" />
+    <Content Include="Content\admin-template\images\icons.png" />
     <Content Include="Content\admin-template\js\all.min.js" />
     <Content Include="Content\admin-template\js\bootstrap.bundle.min.js" />
     <Content Include="Content\admin-template\js\datatables-demo.js" />
@@ -376,7 +377,6 @@
     <Content Include="Views\Home\OrderOnline.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Register.cshtml" />
-    <Content Include="Views\Admin\Login.cshtml" />
     <Content Include="Views\Customer\CustomersList.cshtml" />
     <Content Include="Views\Customer\CustomerInfo.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
@@ -391,6 +391,7 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Admin\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
